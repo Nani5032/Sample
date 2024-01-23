@@ -1,0 +1,16 @@
+Tailwind css production setup steps
+
+npm init -y // initializes a npm project
+npm install -D tailwindcss postcss autoprefixer vite
+npx tailwindcss init -p
+
+create input.css file and add below content
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+in tailwind.config.js file replace content[] with content["*"]
+
+add "start": "vite" under scripts section in package.json file
+
+npm run start -> command to start dev server
